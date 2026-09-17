@@ -13,6 +13,7 @@
             margin: 0 auto;
             padding: 30px 20px;
             background-color: #f9f9f9;
+            scroll-behavior: smooth;
         }
         .container {
             background: #ffffff;
@@ -42,7 +43,7 @@
             font-size: 15px;
             color: #444444;
         }
-        ul {
+        ul, ol {
             padding-left: 20px;
         }
         li {
@@ -53,6 +54,20 @@
             padding: 15px;
             border-radius: 6px;
             margin-bottom: 25px;
+        }
+        .toc {
+            background: #f8f9fa;
+            border: 1px solid #dadce0;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+        .toc a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
         }
         .email-link {
             color: #1a73e8;
@@ -76,26 +91,28 @@
         <p>The PDF Reader - PDF Maker app Privacy Policy outlines how we handle your data, permissions, and privacy within the app. It explains what information is collected (if any), how features like the camera, storage are used, and how third-party services such as AdMob and Firebase may operate. Your files and personal content remain on your device — we do not store, transmit, or share your data externally.</p>
         <p>This policy complies with global privacy standards, including the GDPR and CCPA, to ensure full transparency. By continuing to use the app, you agree to the terms of this Privacy Policy and consent to the use of data solely for improving your experience.</p>
 
-        <p>
-            1. Interpretation and Definitions<br>
-            2. Collecting and Using Your Personal Data<br>
-            3. User Consent for Permissions<br>
-            4. Use of Special Permissions<br>
-            5. Data Retention Policy<br>
-            6. Feedback-Related Device Information<br>
-            7. Third-Party Services and SDKs<br>
-            8. Data Safety Summary<br>
-            9. International Users / Data Transfers<br>
-            10. GDPR Privacy (European Users)<br>
-            11. CCPA Privacy (California Users)<br>
-            12. Children’s Privacy<br>
-            13. Links to Other Websites<br>
-            14. Data Security<br>
-            15. Changes to This Privacy Policy<br>
-            16. Contact Us
-        </p>
+        <div class="toc">
+            <ol>
+                <li><a href="#sec1">1. Interpretation and Definitions</a></li>
+                <li><a href="#sec2">2. Collecting and Using Your Personal Data</a></li>
+                <li><a href="#sec3">3. User Consent for Permissions</a></li>
+                <li><a href="#sec4">4. Use of Special Permissions</a></li>
+                <li><a href="#sec5">5. Data Retention Policy</a></li>
+                <li><a href="#sec6">6. Feedback-Related Device Information</a></li>
+                <li><a href="#sec7">7. Third-Party Services and SDKs</a></li>
+                <li><a href="#sec8">8. Data Safety Summary</a></li>
+                <li><a href="#sec9">9. International Users / Data Transfers</a></li>
+                <li><a href="#sec10">10. GDPR Privacy (European Users)</a></li>
+                <li><a href="#sec11">11. CCPA Privacy (California Users)</a></li>
+                <li><a href="#sec12">12. Children’s Privacy</a></li>
+                <li><a href="#sec13">13. Links to Other Websites</a></li>
+                <li><a href="#sec14">14. Data Security</a></li>
+                <li><a href="#sec15">15. Changes to This Privacy Policy</a></li>
+                <li><a href="#sec16">16. Contact Us</a></li>
+            </ol>
+        </div>
 
-        <h2>1. Interpretation and Definitions</h2>
+        <h2 id="sec1">1. Interpretation and Definitions</h2>
         <h3>Interpretation</h3>
         <p>Words with capitalized initial letters have specific meanings defined below. These definitions apply whether the terms appear in singular or plural.</p>
         <h3>Definitions</h3>
@@ -113,7 +130,7 @@
             <li>CCPA refers to the California Consumer Privacy Act.</li>
         </ul>
 
-        <h2>2. Collecting and Using Your Personal Data</h2>
+        <h2 id="sec2">2. Collecting and Using Your Personal Data</h2>
         <p>We do not directly collect personally identifiable information such as your name, address, personal documents, or stored files. However, to provide the full functionality of the app, we may request access to certain device features and data with your explicit permission. These permissions are used solely to provide app features and are not used to collect, upload, or share your personal content.</p>
         <p>We may request access to the following:</p>
         
@@ -159,19 +176,19 @@
         <h3>No Sale of Data</h3>
         <p>We do not sell, rent, or share your personal data or files with third parties for marketing purposes.</p>
 
-        <h2>3. User Consent for Permissions</h2>
+        <h2 id="sec3">3. User Consent for Permissions</h2>
         <p>We request permissions such as storage, camera only to enable related features in the app. You can decline these permissions; however, some features may be limited or unavailable without the necessary permissions.</p>
 
-        <h2>4. Use of Special Permissions</h2>
+        <h2 id="sec4">4. Use of Special Permissions</h2>
         <h3>MANAGE_EXTERNAL_STORAGE Permission (All Files Access)</h3>
         <p>Our app requests the MANAGE_EXTERNAL_STORAGE permission to enable essential document management features. This permission is fully user-controlled and can be granted or denied at any time.</p>
         <p>If granted, it allows the app to access and manage PDF files across device storage and automatically load compatible local images into an integrated custom gallery. If denied, the app bypasses full storage indexing completely, and users can instead select specific media manually using Android’s secure system file picker.</p>
         <p>We do not collect, upload, or transmit any files or file contents. All operations are performed locally on your device.</p>
 
-        <h2>5. Data Retention Policy</h2>
+        <h2 id="sec5">5. Data Retention Policy</h2>
         <p>All files and data (such as PDFs, images, or text) remain on your device until you choose to delete them. We do not keep copies of your files or data after you delete them. We do not retain any personal data or documents on our servers.</p>
 
-        <h2>6. Feedback-Related Device Information</h2>
+        <h2 id="sec6">6. Feedback-Related Device Information</h2>
         <p>When you choose to send feedback through the app (e.g., via email), we may collect certain non-personal device information to help troubleshoot issues and improve your experience. This information is only included if you manually send a feedback message from the app.</p>
         <p>The feedback email may include:</p>
         <ul>
@@ -191,7 +208,7 @@
             <li>We do not store, track, or sell this data. It is used solely for debugging and support purposes based on your request.</li>
         </ul>
 
-        <h2>7. Third-Party Services and SDKs</h2>
+        <h2 id="sec7">7. Third-Party Services and SDKs</h2>
         <p>To provide better functionality, improve user experience, support app performance monitoring, and enable monetization, our app uses third-party services and Software Development Kits (SDKs). These services may collect and process certain data according to their own privacy policies. We recommend reviewing their respective privacy policies for more information.<br>
         Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
         
@@ -272,7 +289,7 @@
             <li>User interface animations and enhancements</li>
         </ul>
 
-        <h2>8. Data Safety Summary</h2>
+        <h2 id="sec8">8. Data Safety Summary</h2>
         <ul>
             <li>Personal data collected: None</li>
             <li>Files and images accessed: Yes (processed locally only on the device)</li>
@@ -282,10 +299,10 @@
         </ul>
         <p>No personal files, images, PDFs, or documents are uploaded, stored, or shared by the app.</p>
 
-        <h2>9. International Users / Data Transfers</h2>
+        <h2 id="sec9">9. International Users / Data Transfers</h2>
         <p>All data processing happens locally on your device. We do not transfer your personal data outside your device or country.</p>
 
-        <h2>10. GDPR Privacy (European Users)</h2>
+        <h2 id="sec10">10. GDPR Privacy (European Users)</h2>
         <p>If you are located in the European Economic Area (EEA), you have certain rights under the General Data Protection Regulation (GDPR) regarding your personal data, even though our app does not directly collect personal information by default.</p>
         <p>You have the right to:</p>
         <ul>
@@ -301,7 +318,7 @@
         </ul>
         <p>We will respond to your request in accordance with applicable data protection laws.</p>
 
-        <h2>11. CCPA Privacy (California Users)</h2>
+        <h2 id="sec11">11. CCPA Privacy (California Users)</h2>
         <p>If you are a resident of California, you have rights under the California Consumer Privacy Act (CCPA) regarding how your personal data is handled.</p>
         <p>As per the CCPA, you have the right to:</p>
         <ul>
@@ -315,14 +332,14 @@
         </ul>
         <p>We will respond in accordance with CCPA requirements.</p>
 
-        <h2>12. Children’s Privacy</h2>
+        <h2 id="sec12">12. Children’s Privacy</h2>
         <p>Our app is intended for users aged 16 and older. We do not knowingly collect, store, or process personal information from children under the age of 13.</p>
         <p>Most app features operate entirely on the user’s device, and we do not upload or store personal files on external servers.</p>
         <p>If you are a parent or guardian and believe that a child under 13 has provided personal information through the app or related services, please contact us so we can review and address the situation appropriately.</p>
         <p>Any locally stored app data can also be removed at any time by uninstalling the app or clearing the app’s storage through the device settings.</p>
         <p>For any concerns, please contact us at: <a href="mailto:pdfreader.support@gmail.com" class="email-link">pdfreader.support@gmail.com</a></p>
 
-        <h2>13. Links to Other Websites</h2>
+        <h2 id="sec13">13. Links to Other Websites</h2>
         <p>Our app may contain links to external websites or third-party services, such as:</p>
         <ul>
             <li>Advertisers’ websites</li>
@@ -331,19 +348,19 @@
         </ul>
         <p>We do not control and are not responsible for the content, privacy practices, or data collection policies of these external sites. We encourage you to review the privacy policies of any websites or services you visit through our app.</p>
 
-        <h2>14. Data Security</h2>
+        <h2 id="sec14">14. Data Security</h2>
         <p>We value your trust and are committed to protecting your data.</p>
         <p>All file operations (such as viewing, editing, merging, splitting PDFs) and feedback processing happen locally on your device.</p>
         <p>We do not upload, store, or share your files or system information on any external servers.</p>
         <p>However, please understand that no method of electronic storage or transmission can be guaranteed to be 100% secure. While we strive to use commercially acceptable means to protect your data, we cannot ensure absolute security.</p>
 
-        <h2>15. Changes to This Privacy Policy</h2>
+        <h2 id="sec15">15. Changes to This Privacy Policy</h2>
         <p>We may update this Privacy Policy periodically to reflect changes in our app, legal requirements, or industry standards.</p>
         <p>Any significant updates will be communicated through the app itself or in the update release notes.</p>
         <p>We encourage you to review this Privacy Policy regularly to stay informed of how we protect your data and use your information.</p>
         <p>Your continued use of the app after any updates constitutes your acceptance of the revised policy.</p>
 
-        <h2>16. Contact Us</h2>
+        <h2 id="sec16">16. Contact Us</h2>
         <p>If you have any questions, requests, or concerns regarding this Privacy Policy or your data privacy, please feel free to contact us at:</p>
         <p>Email: <a href="mailto:pdfreader.support@gmail.com" class="email-link">pdfreader.support@gmail.com</a></p>
         <p>We strive to respond to all inquiries promptly and help resolve any issues you may have.</p>
